@@ -1,0 +1,66 @@
+{
+  "name": "dsh-composer-plus",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness composer add-on: direct model picker, a notched draggable reasoning-effort rail, and a one-switch DeepSeek account hider. One plugin, zero core changes.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.png",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WuweiRE/dsh-composer-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WuweiRE/dsh-composer-plus/issues"
+  },
+  "homepage": "https://github.com/WuweiRE/dsh-composer-plus#readme",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "composer",
+    "model-picker",
+    "reasoning-effort",
+    "slider",
+    "privacy"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-model-selection",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT"
+}
