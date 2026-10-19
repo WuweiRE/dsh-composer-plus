@@ -1,6 +1,6 @@
 {
   "name": "dsh-composer-plus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek Harness composer add-on: direct model picker, a notched draggable reasoning-effort rail, and a one-switch DeepSeek account hider. One plugin, zero core changes.",
   "type": "module",
   "main": "./lib/index.js",
