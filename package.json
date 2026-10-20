@@ -1,9 +1,12 @@
 {
   "name": "dsh-composer-plus",
-  "version": "0.1.1",
-  "description": "DeepSeek Harness composer add-on: direct model picker, a notched draggable reasoning-effort rail, and a one-switch DeepSeek account hider. One plugin, zero core changes.",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness web-client add-on: direct model picker, a notched draggable reasoning-effort rail, a DeepSeek account hider, and right-click file actions (open in sidebar / show in Finder). One plugin, zero core changes.",
   "type": "module",
   "main": "./lib/index.js",
+  "scripts": {
+    "test": "node test/context-menu.smoke.mjs"
+  },
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
@@ -41,7 +44,10 @@
     "model-picker",
     "reasoning-effort",
     "slider",
-    "privacy"
+    "privacy",
+    "context-menu",
+    "file-actions",
+    "finder"
   ],
   "dsh": {
     "engines": {

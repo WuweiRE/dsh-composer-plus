@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Composer Plus",
-    "description": "DSH 输入框增强：模型选择、可拖动思考强度滑条，并可隐藏 DeepSeek 账号入口。"
+    "description": "DSH 输入框增强：模型选择、可拖动思考强度滑条，可隐藏 DeepSeek 账号入口；文件卡片与路径链接支持右键在 Finder 中打开。"
   }
 }

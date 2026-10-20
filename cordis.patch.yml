@@ -1,12 +1,15 @@
 # Bundle layer contributed by dsh-composer-plus.
 # Applied by `dsh plugin add dsh-composer-plus` into any profile that lists this bundle.
 #
-# One plugin, three composer features:
+# One plugin, four web-client features:
 #   1. model picker   — replaces the composer's native model trigger with a direct list
 #   2. effort rail    — a notched, draggable reasoning-effort slider next to the picker
 #   3. account hider  — keeps the DeepSeek account entry, account page and credential
 #                       onboarding out of the UI (the account model channel is also
 #                       filtered out of the custom model menu)
+#   4. file actions   — right-click a file card, a file-tree row or a rendered
+#                       file-path link to open it in the sidebar or show it in
+#                       Finder / the desktop file manager
 #
 # The account hider is a patch-layer feature: it disables the account client row and
 # turns off credential onboarding in the models settings page. Delete these three
@@ -29,3 +32,4 @@
       config:
         hideAccount: true
         hideAccountModels: true
+        fileActions: true
